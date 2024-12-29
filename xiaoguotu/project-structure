@@ -1,0 +1,13 @@
+warehouse-management/
+├── src/
+│   ├── views/
+│   │   ├── client/           # 客户端相关页面
+│   │   │   ├── order/       # 订单管理
+│   │   │   ├── inventory/   # 库存管理
+│   │   │   ├── finance/     # 财务管理
+│   │   │   └── auth/        # 授权管理
+│   │   └── warehouse/       # 仓库端相关页面
+│   ├── components/          # 公共组件
+│   ├── router/             # 路由配置
+│   └── store/              # 状态管理
+└── package.json 
