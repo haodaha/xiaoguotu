@@ -4,6 +4,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      redirect: '/client/order/waiting'
+    },
+    {
       path: '/client/order/waiting',
       name: 'waitingOrder',
       component: () => import('../views/client/order/WaitingOrder.vue')
@@ -12,6 +16,10 @@ const router = createRouter({
       path: '/warehouse/inbound',
       name: 'inboundManagement',
       component: () => import('../views/warehouse/InboundManagement.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/'
     }
   ]
 })
