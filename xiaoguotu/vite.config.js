@@ -9,5 +9,16 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  base: './' // 这行很重要
+  base: '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'element-plus': ['element-plus']
+        }
+      }
+    }
+  }
 }) 
